@@ -31,11 +31,19 @@ Select TWO Additional Features to Add
   .heading {
     font-style:oblique;
     color: rgb(255, 255, 255);
+     background-color: rgba(255, 228, 225, 0.444);
   width: 300px;
-  border: 15px solid rgb(214, 143, 247);
+  border: 15px solid rgba(218, 133, 240, 0.781);
+  border-radius: 30px;
   padding: 50px;
   margin: 20px;
+  transition: 1s ease-in-out;
   }
+
+.heading:hover {
+  transform: rotate(3600deg);
+}
+
   <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,10 +54,11 @@ body {
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 1100px;
+  height: 500px;
   perspective: 1000px;
-  
+  margin: auto;
+
 }
 
 .flip-card-inner {
@@ -59,7 +68,7 @@ body {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(226, 189, 238, 0.671);
 }
 
 .flip-card:hover .flip-card-inner {
@@ -77,11 +86,12 @@ body {
 .flip-card-front {
   background-color: #bbb;
   color: black;
-  
+  margin: auto;
+
 }
 
 .flip-card-back {
-  background-color: #d29ceb;
+  background-color: #b97fd1c5;
   color: white;
   transform: rotateY(180deg);
   width: auto;
@@ -111,15 +121,86 @@ body {
     <img src="https://static.wikia.nocookie.net/royale-high/images/5/55/Royalehighdancenew.png/revision/latest/scale-to-width-down/1200?cb=20190130153517" alt="Avatar" style="grid-auto-flow: ;">
     </div>
     <div class="flip-card-back">
-      <h1>This is the glorious ballroom!</h1>
+      <h1><span style="color:rgb(255, 255, 255)">This is the glorious ballroom!<span></h1>
       <p>You will dance around until the clock strikes midnight</p>
-      <p>Food is on the house, the waiters are a treat to the eyes, and of course, there's live music!</p>
+      <p>Food is on the house, the waiters are a treat to the eyes, and of course, there's live music!
+      <p></p>
+      </p>
     </div>
   </div>
 </div>
-    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   <center> <h2 class="date">Pick your date!</h2></center>
+
+
+
+
   </body>
 
+  <style>
+
+.date{ font-style:oblique;
+    color: rgb(255, 255, 255);
+     background-color: rgba(255, 228, 225, 0.444);
+  width: 300px;
+  border: 15px solid rgba(218, 133, 240, 0.781);
+  border-radius: 30px;
+  padding: 50px;
+  margin: 20px;
+  transition: 1s ease-in-out;
+  }
+
+.date:hover {
+  transform: rotate(360deg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content:icon;
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>The date options</h2>
+<p>One of these hansome men will accompany you to the ball:</p>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i.redd.it/wke2vy280kg61.png" alt="Snow" style="width:200">
+  </div>
+  <div class="column">
+    <img src="https://static.wikia.nocookie.net/3bbb0898-cbf7-44ca-9a06-2fbbb7d646f6/scale-to-width/755" width="200" height="300" alt="Forest" style="width:100">
+  </div>
+  <div class="column">
+    <img src="https://i.redd.it/0uilmrshf4af1.jpeg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+  </style>
  
 </head>
 <body>
